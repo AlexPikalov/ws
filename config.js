@@ -9,9 +9,3 @@ exports.local = {
   whoisPort: 43,
   logDb: 'mongodb://localhost:27017/whois'
 };
-
-// module.exports = {
-//   whoisHost: 'whois.verisign-grs.com',
-//   whoisPort: 43,
-//   logDb: 'mongodb://localhost:27017/whois'
-// };
