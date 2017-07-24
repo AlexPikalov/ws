@@ -8,7 +8,7 @@ function _SearchFormCtrl(searchConfig) {
 _SearchFormCtrl.$inject = ['searchConfig'];
 
 /**
- * Form submit handler. Call onSubmit callback and passes selected domain.
+ * Form submit handler. Calls onSubmit callback and passes selected domain.
  */
 _SearchFormCtrl.prototype.submit = function (event) {
   event.preventDefault();
