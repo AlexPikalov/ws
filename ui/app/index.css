@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+input:focus {
+  outline: none !important;
+} 
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  display: inline-block;
+  margin-right: 16px;
+  color: #198fd3;
+}
+
+.error-message {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #b53939;
+}
+
+search-form {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 16px;
+  padding-bottom: 4px;
+  background: white;
+
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(189,189,189,1);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(189,189,189,1);
+  box-shadow: 0px 1px 5px 0px rgba(189,189,189,1);
+}
+
+search-form form {
+  margin-bottom: 0px;
+}
+
+search-form .search-control {
+  height: 32px;
+  vertical-align: bottom;
+  font-size: 16px;
+}
+
+search-form input[type="text"] {
+  width: 240px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: 1px solid #a8a8a8;
+}
+
+search-form button[type="submit"] {
+  border: none;
+  background: #199ce8;
+  color: white;
+  padding: 4px 16px;
+}
+
+search-form button:disabled {
+  cursor: not-allowed;
+}
+
+search-form input[type="text"].ng-invalid.ng-dirty {
+  border-color: #b53939;
+}
+
+search-form .validation-error {
+  font-family: Arial;
+  font-size: small;
+  margin-left: 91px;
+  visibility: hidden;
+  color: #7c7c7c;
+}
+
+search-form .ng-invalid-pattern .validation-error {
+  visibility: visible;
+}
+
+.search-result-container {
+  margin-top: 64px;
+  padding: 16px;
+}
+
+.search-result-container pre {
+  margin: 0px;
+}
+
+.search-result-container .no-results {
+  font-family: Arial;
+  font-size: 28px;
+  color: #d6d6d6;
+  text-align: center;
+}
+
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #199ce8;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}

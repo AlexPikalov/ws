@@ -1,0 +1,16 @@
+<form name="domainSearch" novalidate ng-submit="$ctrl.submit($event)">
+  <span class="logo">Whois</span>
+  <input type="text"
+    class="search-control"
+    placeholder="Domain"
+    name="domain"
+    ng-required="true"
+    ng-pattern="$ctrl.domainPattern"
+    ng-model="$ctrl.domain" />
+  <button type="submit"
+    ng-disabled="vm.inProgress || domainSearch.$invalid"
+    class="search-control">
+    Search
+  </button>
+  <div class="validation-error">Please provide a valid .com or .net domain name</div>
+</form>

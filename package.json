@@ -1,0 +1,22 @@
+{
+  "name": "whois",
+  "version": "1.0.0",
+  "description": "Hexanet code challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "security": "./node_modules/.bin/snyk test",
+    "build-ui": "bash ./scripts/build-ui.sh"
+  },
+  "author": "Alex Pikalov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-history-api-fallback": "^2.2.1",
+    "helmet": "^3.8.0",
+    "mongodb": "^2.2.30"
+  },
+  "devDependencies": {}
+}

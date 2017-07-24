@@ -1,0 +1,17 @@
+<search-form domain="vm.domain" on-submit="vm.search($domain)"></search-form>
+<div class="search-result-container">
+  <search-result ng-if="!vm.inProgress && vm.domainDetails && !vm.error"
+    domain-details="vm.domainDetails">
+  </search-result>
+  <div ng-if="!vm.inProgress && !vm.domainDetails && !vm.error" class="no-results">
+    No results to show
+  </div>
+  <div ng-if="vm.error && !vm.inProgress" class="error-message">
+    {{ vm.error.message || 'Unexpected error. Please check your internet connection' }}
+  </div>
+  <div class="spinner" ng-if="vm.inProgress">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
