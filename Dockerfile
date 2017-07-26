@@ -12,5 +12,4 @@ COPY . /usr/src/whois
 RUN npm run build-ui
 
 EXPOSE 3000
-# CMD [ "npm", "run", "build-ui" ]
 CMD [ "npm", "start" ]
